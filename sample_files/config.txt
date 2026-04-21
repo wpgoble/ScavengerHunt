@@ -1,0 +1,40 @@
+# Application Configuration File
+# TODO: Move sensitive data to environment variables
+
+app_name=MyApplication
+version=1.2.3
+debug_mode=true
+
+# Database settings
+db_host=localhost
+db_port=5432
+db_name=myapp_db
+db_user=admin
+
+# API endpoints
+api_url=https://api.example.com
+api_version=v2
+
+# Logging configuration
+# FIXME: Log level should be configurable per module
+log_level=INFO
+log_file=/var/log/app.log
+
+# Cache settings
+cache_enabled=true
+cache_ttl=3600
+
+# Security
+# NOTE: This is a demo password - change in production!
+admin_password=demo_pass_12345
+
+# Feature flags
+feature_beta_ui=false
+feature_analytics=true
+feature_export=true
+
+# Email configuration
+# TODO: Add support for multiple email providers
+smtp_server=smtp.gmail.com
+smtp_port=587
+sender_email=noreply@example.com
